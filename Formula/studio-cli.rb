@@ -7,10 +7,10 @@ class StudioCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gigeey/studio-cli-releases/releases/download/v#{version}/studio-cli-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "e631a9e652389a81406f846ee3073bec11ea13275c2e5afbbc8bb74fdb973645"
+      sha256 "b0453ec7fd4f975974dfa15fd2de2d580d7ea488b4e3a763ad0994b0124ec9df"
     elsif Hardware::CPU.arm?
       url "https://github.com/gigeey/studio-cli-releases/releases/download/v#{version}/studio-cli-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "16f028feba11bbf83513f22d4e913c7d2a73e5c6625a2fe6f6cb14004ab417c3"
+      sha256 "842c79fa3cdcdd2a447e48ac74b6ebacc9dc93b01ace8f223e76e93ed95ebc2d"
     end
   end
 
@@ -25,12 +25,11 @@ class StudioCli < Formula
     bin.install "studio_cli"
     bin.install "studio-agent"
   end
-
+#  Install Claude CLI from: https://github.com/anthropics/claude-code
   def caveats
     <<~EOS
       Studio CLI requires Claude CLI to be installed separately.
 
-      Install Claude CLI from: https://github.com/anthropics/claude-code
 
       To run Studio CLI:
         studio_cli
