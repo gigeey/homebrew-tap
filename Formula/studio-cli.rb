@@ -21,11 +21,20 @@ class StudioCli < Formula
   #   end
   # end
 
-  depends_on "claude-cli" => :recommended
-
   def install
     bin.install "studio_cli"
     bin.install "studio-agent"
+  end
+
+  def caveats
+    <<~EOS
+      Studio CLI requires Claude CLI to be installed separately.
+
+      Install Claude CLI from: https://github.com/anthropics/claude-code
+
+      To run Studio CLI:
+        studio_cli
+    EOS
   end
 
   test do
