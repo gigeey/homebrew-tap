@@ -1,7 +1,7 @@
 class StudioCli < Formula
   desc "Interactive terminal-based project management system with integrated AI agent capabilities"
   homepage "https://github.com/gigeey/studio-cli-releases"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
