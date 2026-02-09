@@ -1,16 +1,16 @@
 class StudioCli < Formula
   desc "Interactive terminal-based project management system with integrated AI agent capabilities"
   homepage "https://github.com/gigeey/studio-cli-releases"
-  version "0.2.7"
+  version "0.2.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gigeey/studio-cli-releases/releases/download/v#{version}/studio-cli-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "4d21a5e45b04322d634de15773317355634a5207cecc2ec9ac6150acebbdd1bb"
+      sha256 "72987314c75cecc7f0ed927df0bba4d778bd9c2bb1b559d5db10c0e9d1faabbc"
     elsif Hardware::CPU.arm?
       url "https://github.com/gigeey/studio-cli-releases/releases/download/v#{version}/studio-cli-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "a620b1765608cc4e1824bc1a200318b9d0ed9b716823820a78ec776424d2ab9f"
+      sha256 "367082139e595e98c192ffacaaf1c307e096861d9fdf99303f91a73c41fd0e12"
     end
   end
 
