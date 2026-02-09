@@ -7,10 +7,10 @@ class StudioCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gigeey/studio-cli-releases/releases/download/v#{version}/studio-cli-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "a1b383262dd07c89b1711566f4b6fefc1fc20361df76ffd0754dfb402fd5ecb7"
+      sha256 "0e64dd467e7bf8ce609abd688415a88a20d1ed197134fa4e8ac040d5fd4a258b"
     elsif Hardware::CPU.arm?
       url "https://github.com/gigeey/studio-cli-releases/releases/download/v#{version}/studio-cli-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "dee591abce8f4856e9fd2183c1bc822cb1003a2697e56321ba1dfe652ff6008d"
+      sha256 "9ce081a30f82c24bc9ffe3d5c209b404f718f7eff58584d06a4964346b1586f7"
     end
   end
 
