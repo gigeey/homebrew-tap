@@ -1,16 +1,16 @@
 class StudioCli < Formula
   desc "Interactive terminal-based project management system with integrated AI agent capabilities"
   homepage "https://github.com/gigeey/studio-cli-releases"
-  version "0.2.12"
+  version "0.2.13"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gigeey/studio-cli-releases/releases/download/v#{version}/studio-cli-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "0efa8ca14f877d20623d0f11429133b3701a2270e8cf49e30d763d5d0c020a80"
+      sha256 "87bacf5a96d864c572bd7cacc84f4ef67ea1a67736697bc2fc27dce30e4f98a5"
     elsif Hardware::CPU.arm?
       url "https://github.com/gigeey/studio-cli-releases/releases/download/v#{version}/studio-cli-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "39f8b0100e39d4a8f28c3ba9380feb34f321b9421584a88910c9a4989adc870a"
+      sha256 "40f4357edfbd476a876255f74bf50e9aa2a51b917b2baf6d90a5256cd82bfa52"
     end
   end
 
@@ -28,7 +28,7 @@ class StudioCli < Formula
 #  Install Claude CLI from: https://github.com/anthropics/claude-code
   def caveats
     <<~EOS
-      Studio CLI requires Claude CLI to be installed separately.
+      Studio CLI requires Claude CLI / Cursor cli to be installed separately.
 
 
       To run Studio CLI:
